@@ -18,7 +18,7 @@ void main() {
     usecase = GetRandomNumberTrivia(mockNumberTriviaRepository);
   });
 
-  final tNumTrivia = NumberTrivia(num: 1, txt: 'test');
+  final tNumTrivia = NumberTrivia(number: 1, text: 'test');
   test('should get trivia from the repo', () async {
     // arrange
     when(mockNumberTriviaRepository.getRandomNumberTrivia())

@@ -18,7 +18,7 @@ void main() {
   });
 
   final tNum = 1;
-  final tNumTrivia = NumberTrivia(num: tNum, txt: 'test');
+  final tNumTrivia = NumberTrivia(number: tNum, text: 'test');
   test('should get trivia for the number from the repo', () async {
     // arrange
     // when getConcreteNumberTrivia is called with any number,

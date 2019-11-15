@@ -4,20 +4,20 @@ import 'package:word_trivia/features/number_trivia/domain/entities/number_trivia
 
 class NumberTriviaModel extends NumberTrivia {
   NumberTriviaModel({
-    @required String txt,
-    @required int num,
-  }) : super(txt: txt, num: num);
+    @required String text,
+    @required int number,
+  }) : super(text: text, number: number);
 
   factory NumberTriviaModel.fromJson(Map<String, dynamic> json) {
     // casting as num succeeds with all number types
     return NumberTriviaModel(
-        txt: json['text'], num: (json['number'] as num).toInt());
+        text: json['text'], number: (json['number'] as num).toInt());
   }
 
   Map<String, dynamic> toJson() {
     return {
-      'text': txt,
-      'number': num,
+      'text': text,
+      'number': number,
     };
   }
 }
